@@ -25,6 +25,7 @@ const Header = props => {
               src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
               alt="nav logout"
               className="nav-bar-img"
+              onClick={onClickLogout}
             />
           </button>
         </div>
@@ -57,29 +58,33 @@ const Header = props => {
       </div>
       <div className="nav-menu-mobile">
         <ul className="nav-menu-list-mobile">
-          <li className="nav-menu-item-mobile">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
-              alt="nav home"
-              className="nav-bar-img"
-            />
-          </li>
-
-          <li className="nav-menu-item-mobile">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
-              alt="nav products"
-              className="nav-bar-img"
-            />
-          </li>
-
-          <li className="nav-menu-item-mobile">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-              alt="nav cart"
-              className="nav-bar-img"
-            />
-          </li>
+          <Link to="/" className="link-class">
+            <li className="nav-menu-item-mobile">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
+                alt="nav home"
+                className="nav-bar-img"
+              />
+            </li>
+          </Link>
+          <Link to="/products" className="link-class">
+            <li className="nav-menu-item-mobile">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
+                alt="nav products"
+                className="nav-bar-img"
+              />
+            </li>
+          </Link>
+          <Link to="/cart" className="link-class">
+            <li className="nav-menu-item-mobile">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                alt="nav cart"
+                className="nav-bar-img"
+              />
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
